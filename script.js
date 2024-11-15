@@ -1,11 +1,14 @@
-function SidebarActive() {
-  const sidebar = document.getElementById("sidebar-active");
-  sidebar.checked = true;
-  console.log("SidebarActive");
-}
+document
+  .getElementById("menu-icon")
+  .addEventListener("touchstart", function () {
+    console.log("checked = true");
 
-function SidebarInactive() {
-  const sidebar = document.getElementById("sidebar-active");
-  sidebar.checked = false;
-  console.log("SidebarInactive");
-}
+    document.getElementById("sidebar-active").checked = true;
+  });
+
+document
+  .getElementById("close-icon")
+  .addEventListener("touchstart", function () {
+    console.log("checked = false");
+    document.getElementById("sidebar-active").checked = false;
+  });
