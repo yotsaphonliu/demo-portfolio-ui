@@ -131,7 +131,13 @@ nav {
         transition: 0.4s ease-out;
 
         li {
-          padding: 20px;
+          width: 100%;
+
+          a {
+            padding: 15px 0;
+            display: block;
+            width: 100%;
+          }
         }
 
         .close-icon {
