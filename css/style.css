@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oooh+Baby&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   --white: #fff;
@@ -43,12 +43,15 @@ nav {
     align-items: center;
 
     .logo {
+      padding: 8px;
+      background-color: var(--pink);
+      border-radius: 100%;
       a {
         font-size: 44px;
         font-weight: bold;
         color: var(--black);
         text-decoration: none;
-        font-family: "Lato", serif;
+        font-family: "Oooh Baby", cursive;
       }
     }
 
@@ -62,9 +65,20 @@ nav {
         font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 60;
       }
 
+      .menu-page {
+        a {
+          text-decoration: none;
+          color: var(--pink);
+        }
+      }
+
       li {
         padding-left: 20px;
         font-size: 20px;
+        a {
+          text-decoration: none;
+          color: var(--black);
+        }
       }
     }
   }
@@ -323,6 +337,58 @@ footer {
 
     .copyright {
       padding: 20px 0;
+    }
+  }
+}
+
+.blog {
+  background-color: var(--white);
+
+  .blog-wrapper {
+    padding: 30px 0;
+
+    .container-header {
+      h1 {
+        font-size: 44px;
+        padding: 20px 0;
+      }
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 15px;
+
+      .blog-grid-item {
+        padding: 20px 0;
+        border-bottom: 1px solid var(--light-gray);
+
+        .blog-title {
+          padding: 10px 0;
+        }
+
+        .blog-tag {
+          display: flex;
+
+          .seperater {
+            padding: 0 20px;
+          }
+
+          .blog-tags {
+            color: var(--light-gray);
+          }
+        }
+
+        p {
+          padding: 10px 0;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 825px) {
+    .blog-wrapper {
+      padding: 30px;
     }
   }
 }
