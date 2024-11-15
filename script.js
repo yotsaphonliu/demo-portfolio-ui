@@ -1,14 +1,10 @@
-document
-  .getElementById("menu-icon")
-  .addEventListener("touchstart", function () {
-    console.log("checked = true");
+document.getElementById("menu-icon").addEventListener("click", function () {
+  console.log("true");
 
-    document.getElementById("sidebar-active").checked = true;
-  });
+  document.getElementById("sidebar-active").checked = true;
+});
 
-document
-  .getElementById("close-icon")
-  .addEventListener("touchstart", function () {
-    console.log("checked = false");
-    document.getElementById("sidebar-active").checked = false;
-  });
+document.getElementById("close-icon").addEventListener("click", function () {
+  console.log("false");
+  document.getElementById("sidebar-active").checked = false;
+});
