@@ -143,3 +143,47 @@ nav {
     }
   }
 }
+
+.feature-works {
+  background-color: var(--white);
+
+  .feature-works-wrapper {
+    padding: 20px 0;
+
+    .feature-works-grid {
+      padding: 20px 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      .feature-works-grid-item {
+        display: flex;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--light-gray);
+
+        .feture-info {
+          display: flex;
+          flex-direction: column;
+          padding: 0 20px;
+
+          .feature-info-tag {
+            display: flex;
+
+            padding: 20px 0;
+
+            .feature-year {
+              background-color: var(--dark-blue);
+              color: var(--white);
+              border-radius: 1rem;
+              padding: 0 10px;
+            }
+
+            .feature-program {
+              margin: 0 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
