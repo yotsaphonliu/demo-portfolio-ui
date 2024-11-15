@@ -187,3 +187,27 @@ nav {
     }
   }
 }
+
+footer {
+  background-color: var(--white);
+
+  margin: 50px 0;
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .footer-social-icons {
+      padding: 20px;
+      img {
+        padding: 0 20px;
+      }
+    }
+
+    .copyright {
+      padding: 20px 0;
+    }
+  }
+}
