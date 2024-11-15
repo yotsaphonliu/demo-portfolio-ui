@@ -479,3 +479,56 @@ footer {
     }
   }
 }
+
+.work-details {
+  background-color: var(--white);
+
+  .work-details-wrapper {
+    padding: 30px 0;
+
+    .container-header {
+      h1 {
+        font-size: 44px;
+        padding: 20px 0;
+      }
+    }
+
+    .work-details-tag {
+      display: flex;
+
+      .work-details-year {
+        padding: 0 15px;
+        background-color: var(--pink);
+        color: var(--white);
+        border-radius: 1rem;
+      }
+
+      .work-details-catagories {
+        padding: 0 20px;
+      }
+    }
+
+    p {
+      padding: 20px 0;
+    }
+
+    img {
+      width: 100%;
+      padding: 30px 0;
+    }
+
+    h1 {
+      font-size: 44px;
+    }
+
+    h2 {
+      font-size: 36px;
+    }
+  }
+
+  @media screen and (max-width: 825px) {
+    .work-details-wrapper {
+      padding: 30px;
+    }
+  }
+}
