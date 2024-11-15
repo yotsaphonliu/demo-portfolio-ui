@@ -6,20 +6,27 @@
     <title>Portfolio UI</title>
 
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"
-    />
   </head>
   <body>
     <nav>
       <div class="nav-wrapper">
-        <div class="logo"><a href="index.html">Jew</a></div>
+        <div class="logo"><a href="/index.html">Jew</a></div>
+        <input type="checkbox" id="sidebar-active" /><img
+          src="/icon/menu.svg"
+          class="menu-icon"
+          alt="menu"
+          onclick="SidebarActive()"
+        />
         <div class="menu">
-          <li><a href="blog.html">BLog</a></li>
-          <li><a href="work.html">Works</a></li>
+          <img
+            src="/icon/close.svg"
+            class="close-icon"
+            alt="close"
+            onclick="SidebarInactive()"
+          />
+          <li><a href="/blog.html">BLog</a></li>
+          <li><a href="/work.html">Works</a></li>
           <li><a href="#">Contact</a></li>
-          <span class="material-symbols-outlined"> menu </span>
         </div>
       </div>
     </nav>
@@ -181,5 +188,7 @@
         <div class="copyright">Copyright ©2020 All rights reserved</div>
       </div>
     </footer>
+
+    <script src="/script.js" />
   </body>
 </html>

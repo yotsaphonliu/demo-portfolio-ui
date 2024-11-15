@@ -14,12 +14,23 @@
   <body>
     <nav>
       <div class="nav-wrapper">
-        <div class="logo"><a href="index.html">Jew</a></div>
+        <div class="logo"><a href="/index.html">Jew</a></div>
+        <input type="checkbox" id="sidebar-active" /><img
+          src="/icon/menu.svg"
+          class="menu-icon"
+          alt="menu"
+          onclick="SidebarActive()"
+        />
         <div class="menu">
-          <li class="menu-page"><a href="blog.html">BLog</a></li>
-          <li><a href="work.html">Works</a></li>
+          <img
+            src="/icon/close.svg"
+            class="close-icon"
+            alt="close"
+            onclick="SidebarInactive()"
+          />
+          <li class="menu-page"><a href="/blog.html">BLog</a></li>
+          <li><a href="/work.html">Works</a></li>
           <li><a href="#">Contact</a></li>
-          <span class="material-symbols-outlined"> menu </span>
         </div>
       </div>
     </nav>
@@ -105,5 +116,7 @@
         <div class="copyright">Copyright ©2020 All rights reserved</div>
       </div>
     </footer>
+
+    <script src="/script.js" />
   </body>
 </html>
